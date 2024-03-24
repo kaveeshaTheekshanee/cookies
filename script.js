@@ -7,6 +7,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+function validateForm() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+        alert("All fields must be filled out");
+        return false;
+    }
+
+    // Add more complex validation if needed, e.g., email format validation
+
+    alert("Form submitted successfully!");
+    return true;
+}
+
 window.onscroll = function () {
     const currentScrollPos = window.pageYOffset;
     const header = document.getElementById('main-header');
