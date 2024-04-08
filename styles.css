@@ -59,6 +59,18 @@ nav ul li a:hover {
     color: #efc804;
 }
 
+#image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#image img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
 
 
 
