@@ -11,17 +11,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 function validateForm() {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
+    var phone = document.getElementById("phone").value;
     var message = document.getElementById("message").value;
 
-    if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+    if (name.trim() === "" || email.trim() === "" || phone.trim() === "" || message.trim() === "") {
         alert("All fields must be filled out");
         return false;
     }
 
-    // Add more complex validation if needed, e.g., email format validation
+    
 
     alert("Form submitted successfully!");
-    return true;
+    return true;
 }
 
 window.onscroll = function () {
