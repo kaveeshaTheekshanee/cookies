@@ -19,7 +19,6 @@
             <div class="lists">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li ><a href="menu.html">Menu</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="shop.html">Shop</a></li>
                     <li><a href="about.html">About Us</a></li>
@@ -27,7 +26,8 @@
                 </ul>
             </div>
         </nav>
-        <section>
+        <div style="display: flex;align-items: center;justify-content: space-between;">
+        <section style="margin: auto;width: 70%;">
             <h2 style="text-align: center;">Contact Us</h2>
             <form onsubmit="return validateForm()" action="contact.php" method="post">
                 <label for="name">Name:</label>
@@ -37,16 +37,27 @@
                 <input type="email" id="email" name="email" required>
 
                 <label for="phone Number">Phone Number:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="text" id="text" name="phone" required>
     
-                <label for="message">Message:</label>
+                <label for="message">Order List:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
     
-                <input type="submit" value="Submit">
+                <input type="submit" value="Order Now">
             </form>
     
         </section>
-
+        <section class="contact" id="contact">
+            <div class="row">
+              <div class="col-md-5 py-3 py-md-0">
+                <h3>Let's Get In Touch</h3>
+                <p>Indulging in sweet symphonies, one nibble at a time, as crumbles of happiness dance upon our taste buds - that's the magic baked into every cookie.</p>
+                <i class="fa-solid fa-phone"><img src="webproject/contact/icons8-phone-50.png" alt="phone"><span>0716378195</span></i><br><br>
+                <i class="fa-solid fa-envelope"><img src="webproject/contact/icons8-email-64.png" alt="email"><span>kaveeshaaagamlth @mail.com</span></i><br><br>
+                <i class="fa-solid fa-location-dot"><img src="webproject/contact/icons8-location-50.png" alt="location"><span>The Cookies Shop,Main Street,Kegalle,Sri Lanka.</span></i>
+              </div>
+            </div>
+        </section>
+        </div>
         <footer>
             <div class="social-media-links">
             
